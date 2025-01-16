@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.message-box::-webkit-scrollbar{
+  display: none;
+}
+
+.sidepanel {
+  z-index: 40; /* Higher than other elements */
+}
+
+.modal {
+  z-index: 50; /* Ensure it overlays the side panel */
+}
+
+.message-box{
+  scroll-behavior: smooth;
+}
